@@ -13,7 +13,16 @@ import Canvas from './canvas/Canvas';
 function App() {
   return (
     <div className="App">
-     < Tool />
+      {/* add routes here to canvas and tool */}
+      <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Tool />} />
+        <Route path="/canvas" element={<Canvas />} />
+        <Route path="/tool" element={<Tool />} />
+      </Routes>
+    </BrowserRouter>
+     {/* <Canvas /> */}
+     {/* < Tool /> */}
     </div>
 
   );
